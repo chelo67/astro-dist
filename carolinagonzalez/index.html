@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="es" data-astro-cid-ouamjn2i> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v4.14.5"><title>Carolina gonzalez</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><!-- Google Fonts Lobster --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"><link rel="stylesheet" href="/astro-dist/_astro/index.Bcf2GcsN.css">
+<style>.cabecera[data-astro-cid-5tltzx3r]{background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:20px 20px 0 0}.perfil[data-astro-cid-5tltzx3r]{margin-top:-80px}.foto[data-astro-cid-5tltzx3r]{border:5px solid #fff;border-radius:50%}.contacto[data-astro-cid-5tltzx3r] i[data-astro-cid-5tltzx3r]{color:#fff}
+</style><script type="module">async function o(){const e=(await(await fetch("https://ingenious-jaguar-f974f7.instawp.xyz/wp-json/wp/v2/tarjeta?author=3&acf_format=standard")).json())[0].acf;console.log(e.foto);const t=`
+        <section class="bg-white md:w-7/12 mx-auto h-screen">
+          <div class="cabecera w-full h-52 my-3" style="background-image: url('${e.imagen_top}'); background-size: cover; background-position: center;border-radius: 20px 20px 0 0;"></div>
+
+          <!-- PERFIL ------------------------------------------------->
+          <div class="perfil w-11/12 mx-auto h-fit flex justify-evenly" style="margin-top: -50px;">
+            <div class="w-1/4 mx-auto h-fit">
+              <img src="${e.foto}" alt="" style="border: 5px solid #fff;border-radius: 50%;" />
+            </div>
+            <div
+              class="w-3/4 flex justify-end flex-col mt-7 md:mt-20 items-center h-full"
+            >
+              <h1 class="font-sans text-3xl md:text-4xl font-bold">${e.nombre}</h1>
+              <p class="font-body text-lg md:text-xl mt-2">${e.puesto}</p>
+            </div>
+          </div>
+
+          <!-- CONTACTO -------------------------------------------------->
+          <section class="contacto w-full h-20 mt-5 flex justify-evenly items-center">
+            <div
+              class="flex justify-center items-center bg-primario w-16 h-16 rounded-full" style="background-color: ${e.color_boton};"
+            >
+              <a href="tel:${e.telefono}" class="text-white" style="color: white">
+                <i class="fa-solid fa-phone fa-2x"></i>
+              </a>
+            </div>
+
+            <div
+              class="flex justify-center items-center bg-primario w-16 h-16 rounded-full" style="background-color: ${e.color_boton};"
+            >
+              <a href="mailto:${e.email}" style="color: white">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+              </a>
+            </div>
+            <div
+              class="flex justify-center items-center bg-primario w-16 h-16 rounded-full" style="background-color: ${e.color_boton};"
+            >
+              <a href="${e.web}" style="color: white">
+                <i class="fa-solid fa-globe fa-2x"></i>
+              </a>
+            </div>
+          </section>
+        </section>
+      `;document.getElementById("tarjetas-list").innerHTML=t}o();
+</script></head> <body data-astro-cid-ouamjn2i> <div id="tarjetas-list" data-astro-cid-5tltzx3r>Cargando...</div> <script src="https://kit.fontawesome.com/dbb4fa1064.js" crossorigin="anonymous"></script> </body> </html>
